@@ -12,7 +12,7 @@ namespace Ex11
 
             if (salário > 2500)
             {
-                aumento = salário * 0.5;
+                aumento = salário * 0.05;
                 Console.WriteLine("O seu salário com aumento agora é {0}: ", (aumento + salário));
 
 
