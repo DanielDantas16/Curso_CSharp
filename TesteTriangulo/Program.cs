@@ -1,4 +1,6 @@
-﻿namespace TesteTriangulo
+﻿using System.ComponentModel.Design;
+
+namespace TesteTriangulo
 {
     internal class Program
     {
@@ -18,6 +20,16 @@
             if ((ladoA < ladoB + ladoC) && (ladoB < ladoA + ladoC) && (ladoC < ladoA + ladoB))
             {
                 Console.WriteLine("Os valores informados formam um triângulo.");
+                if ((ladoA == ladoB) && (ladoB == ladoC))
+                {
+                    Console.WriteLine("Triangulo equilátero");
+                }
+                else if ((ladoA == ladoB) || (ladoA == ladoC) || (ladoB == ladoC))
+                { Console.WriteLine("Ele é um triangulo isóceles."); }
+                else
+                {
+                    Console.WriteLine("Ele é um triangulo escaleno.");
+                }
             }
             else
             {
@@ -25,4 +37,4 @@
             }
         }
     }
-}
+    }
